@@ -45,8 +45,8 @@ void euler_back(const int n, double arr_back[][2], const double step)
 	arr_back[0][1]=0;
 	for(int i=1; i<n; i++)
 	{
-		arr_back[i][0]=(arr_back[i-1][0]+step*arr_back[i-1][1])/(step*step+1) ;
-		arr_back[i][1]=(arr_back[i-1][0]*(-step)+arr_back[i-1][1])/(step*step+1) ;
+		arr_back[i][0]=(arr_back[i-1][0]+step*arr_back[i-1][1])/(pow(step,2)+1) ;
+		arr_back[i][1]=(arr_back[i-1][0]*(-step)+arr_back[i-1][1])/(pow(step,2)+1) ;
 
 	}
 
