@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#define _USE_MATH_DEFINES
 #include <cmath>
 
 using namespace std;
@@ -10,10 +11,10 @@ void euler_back(const int n, double arr_vor[][2], const double step);
 void make_file_back (const int n, double arr_back[][2],  const double step);
 int main()
 {
-	const double PI=3.14;
+	//const double PI=3.14;
 	const double t_beg=0.0;
-	const double t_end=20.0*PI;
-	const double step=PI/100;
+	const double t_end=20.0*M_PI;
+	const double step=M_PI/100;
 	const int n=2000;
 
 
